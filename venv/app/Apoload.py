@@ -9,6 +9,7 @@ import csv
 
 Output_Path = str(os.path.join(os.getcwd(), 'Outputs'))
 Storage_Path = str(os.path.join(Output_Path,"APOPND_THSR_Ok.csv"))
+Latilongi_Keyword = "經緯座標"
 
 class Apoload():
 
@@ -31,7 +32,7 @@ class Apoload():
 
             # Get Latitude-and-longitude row and parse
             for row in rows:
-                if(len(row) > 0 and row[0]=="經緯座標"):
+                if(len(row) > 0 and row[0]==Latilongi_Keyword):
                     cleanRow = [x.replace("\r\n","") for x in row]
                     for val in cleanRow[1:len(row)]:
                         if val:

@@ -16,9 +16,9 @@ Output_Path = str(os.path.join(os.getcwd(), 'Outputs'))
 Log_Path = str(os.path.join(Output_Path,"Apopnd.log"))
 Storage_Path = str(os.path.join(Output_Path,"APOPND_THSR.csv"))
 
-print (Output_Path)
-print (Log_Path)
-print (Storage_Path)
+# print (Output_Path)
+# print (Log_Path)
+# print (Storage_Path)
 
 
 logging.basicConfig(level=logging.INFO,
